@@ -19,6 +19,10 @@
   <body>
     <!--Header Section-->
     <header class="header">
+      <div class="header__logo-mobile">
+        <a href="#"><img src="./img/icons/logo.svg" alt="Logo" /></a>
+      </div>
+
       <div class="container">
         <div class="header__logo">
           <a href="#"><img src="./img/icons/logo.svg" alt="Logo" /></a>
@@ -38,7 +42,45 @@
           Book a Service
         </button>
       </div>
+
+      <button
+        class="js-open-menu button button--toggle-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          width="24"
+          height="24"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
     </header>
+
+    <div class="js-menu-container">
+      <button class="js-close-menu button button-close-menu">&times;</button>
+      <nav class="header__navigation">
+        <ul>
+          <li><a href="index.html" class="active">About</a></li>
+          <li><a href="portofoliu.html">Services and Prices</a></li>
+          <li><a href="#">Barbers</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header__info">
+        <a href="tel:+380441111111">+38 044 111 11 11</a>
+      </div>
+      <button class="header__booking button button-mobile" type="button">
+        Book a Service
+      </button>
+    </div>
 
     <!-- Portiune principala a paginii web-->
     <main>
@@ -473,6 +515,7 @@
       </div>
     </div>
 
-    <script src="./modal.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

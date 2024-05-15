@@ -1,1 +1,1 @@
-# HTML_CSS - Modulul 6 - Lecția 13 - Media Query
+# HTML_CSS - Modulul 7 - Lecția 14 - Grafica adaptivă
