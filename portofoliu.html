@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lectia 1 HTML&CSS</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--Header Section-->
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <a href=""><img src="./img/icons/logo.svg" alt="Logo" /></a>
+        </div>
+        <nav class="header__navigation">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li>
+              <a href="protofoliu.html" class="active">Services and Prices</a>
+            </li>
+            <li><a href="#">Barbers</a></li>
+            <li><a href="#" class="active">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header__info">
+          <a href="tel:+380441111111">+38 044 111 11 11</a>
+        </div>
+        <button class="header__booking button" type="button">
+          Book a Service
+        </button>
+      </div>
+    </header>
+
+    <!-- Portiune principala a paginii web-->
+    <main>Portofoliu</main>
+
+    <!-- footer section-->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__copyright">&copy; Copyright 2022</p>
+        <ul class="footer__social">
+          <li class="footer__social-item">Instagram</li>
+          <li class="footer__social-item">Youtube</li>
+        </ul>
+      </div>
+    </footer>
+
+    <div data-modal class="is-hidden">
+      <div data-modal-content>
+        <button data-modal-close type="button">X</button>
+        <h2 class="modal-title">
+          Leave your information and we'll call you back
+        </h2>
+
+        <form name="modal-form" class="modal-form">
+          <label class="modal-form__position"
+            >Name
+            <input type="text" name="username" class="modal-form__input" />
+          </label>
+          <label class="modal-form__position">
+            Telefon
+            <input type="tel" name="userphone" class="modal-form__input" />
+          </label>
+          <label class="modal-form__position">
+            E-mail
+            <input type="email" name="useremail" class="modal-form__input" />
+          </label>
+          <label class="modal-form__position">
+            Mesaj
+            <textarea
+              name="mesaj"
+              placeholder="Introdu mesajul tau"
+              class="modal-form__comments"
+              rows="5"
+            ></textarea>
+          </label>
+          <label class="modal-form__position modal-form__checked"
+            ><input
+              type="checkbox"
+              name="agree"
+              value="agree"
+              class="modal-form__input"
+            />
+            I agree with the letter and accept the
+            <a href="#" class="condition">Terms and Conditions</a>
+          </label>
+
+          <button type="submit" class="modal-form__btn">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./modal.js"></script>
+  </body>
+</html>
